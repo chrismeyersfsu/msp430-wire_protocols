@@ -10,7 +10,7 @@ Simple wire-protocol code.
 
 == Compile and Run ==
 
-Cross-compiling requires that you specify the <i>memory management control unit</i> for the exact chip type that you intend to run the code on. The below example is for the TI launchpad.
+Cross-compiling requires that you specify the target chip. The below example is for the TI launchpad.
 <pre>msp430-gcc -Os -mmcu=msp430g2553 -o spi+pwm.elf spi+pwm.c</pre>
 
 Install and run
@@ -21,7 +21,7 @@ prog spi+pwm.elf
 run
 </pre>
 
-== Memory Mangement Control Units ==
+== Compilation Targets ==
 <pre>
 cd /usr/lib/gcc/../../msp430/lib/ldscripts/msp430g2231/
 ls
